@@ -1,0 +1,42 @@
+{
+  "Navbar": {
+    "who": "Who we are",
+    "what": "What we do",
+    "works": "Works",
+    "people": "People",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "Contact": {
+    "title": "Do you want to become part of our musical universe? We are open to new ideas, partnerships and interesting projects!",
+    "description": "We are open to new ideas, partnerships, and exciting projects!",
+    "email_info": "Write to us at",
+    "email": "Email",
+    "address": "📍 Address: Tashkent, Amir Temur Avenue, 53.",
+    "phone": "📞 Phone: +998 (71) 215-57-22",
+    "socials": "🌐 Socials: ",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "phone_number": "Phone Number",
+    "message_placeholder": "How can we help?",
+    "send_button": "Send",
+    "sending": "Sending...",
+    "success_message": "Your message has been sent successfully!",
+    "error_message": "An error occurred. Please try again.",
+
+    "errors": {
+      "name_short": "Name must be at least 2 characters.",
+      "name_long": "Name cannot exceed 50 characters.",
+      "name_required": "First name is required.",
+      "surname_short": "Last name must be at least 2 characters.",
+      "surname_long": "Last name cannot exceed 50 characters.",
+      "surname_required": "Last name is required.",
+      "invalid_email": "Invalid email format.",
+      "email_required": "Email is required.",
+      "invalid_phone": "Invalid phone number format.",
+      "phone_required": "Phone number is required.",
+      "message_short": "Message must be at least 10 characters.",
+      "message_required": "Message is required."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "Navbar": {
+    "who": "Кто мы такие",
+    "what": "Чем мы занимаемся",
+    "works": "Работы",
+    "people": "Люди",
+    "contact": "Контакты",
+    "language": "Язык"
+  },
+  "Contact": {
+    "title": "Хочешь делать что-нибудь вместе?",
+    "description": "Questions, comments, or suggestions? Simply fill in the form and we’ll be in touch shortly.",
+    "email_info": "Напишите нам на",
+    "email": "Email",
+    "address": "1055 Arthur ave Elk Groot, 67. New Palmas South Carolina.",
+    "phone": "+1 234 678 9108 99",
+    "socials": "Contact@moralizer.com",
+    "first_name": "Имя",
+    "last_name": "Фамилия",
+    "phone_number": "Номер телефона",
+    "message_placeholder": "Как мы можем помочь?",
+    "send_button": "Отправить",
+    "sending": "Отправка...",
+    "success_message": "Ваше сообщение успешно отправлено!",
+    "error_message": "Произошла ошибка. Попробуйте еще раз.",
+
+    "errors": {
+      "name_short": "Имя должно содержать не менее 2 символов.",
+      "name_long": "Имя не может превышать 50 символов.",
+      "name_required": "Имя обязательно.",
+      "surname_short": "Фамилия должна содержать не менее 2 символов.",
+      "surname_long": "Фамилия не может превышать 50 символов.",
+      "surname_required": "Фамилия обязательна.",
+      "invalid_email": "Некорректный формат электронной почты.",
+      "email_required": "Электронная почта обязательна.",
+      "invalid_phone": "Некорректный формат номера телефона.",
+      "phone_required": "Номер телефона обязателен.",
+      "message_short": "Сообщение должно содержать не менее 10 символов.",
+      "message_required": "Сообщение обязательно."
+    }
+  }
+}
