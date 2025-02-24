@@ -1,28 +1,16 @@
 "use client";
 
-import { getClients } from "@/api/data";
-import { TypeClients } from "@/api/type";
 import { useLocale } from "next-intl";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
+import { useFetchData } from "@/api/api";
+import { TypeClients } from "@/api/type";
 
 const Clients = () => {
-  const currentLang = useLocale() as "ru" | "en";
-  const [data, setData] = useState<TypeClients[]>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await getClients(currentLang);
-        setData(response);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, [currentLang]);
+  const { data } = useFetchData<TypeClients[]>(
+    "api/partners",
+    useLocale() as "ru" | "en"
+  );
 
   return (
     <div className="overflow-hidden lg:mb-16 mb-8">

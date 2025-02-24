@@ -5,16 +5,21 @@
     "works": "Works",
     "people": "People",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "Footer": {
+      "contactUs": "Contact us",
+      "email": "Email",
+      "address": "Address"
+    }
   },
   "Contact": {
     "title": "Do you want to become part of our musical universe? We are open to new ideas, partnerships and interesting projects!",
     "description": "We are open to new ideas, partnerships, and exciting projects!",
     "email_info": "Write to us at",
     "email": "Email",
-    "address": "📍 Address: Tashkent, Amir Temur Avenue, 53.",
-    "phone": "📞 Phone: +998 (71) 215-57-22",
-    "socials": "🌐 Socials: ",
+    "address": "Address: Tashkent, Amir Temur Avenue, 53.",
+    "phone": "Phone: +998 (71) 215-57-22",
+    "socials": "Socials: ",
     "first_name": "First Name",
     "last_name": "Last Name",
     "phone_number": "Phone Number",
@@ -34,6 +39,8 @@
       "invalid_email": "Invalid email format.",
       "email_required": "Email is required.",
       "invalid_phone": "Invalid phone number format.",
+      "phone_too_short": "Phone number must be at least 10 characters.",
+      "phone_too_long": "Phone number cannot exceed 20 characters.",
       "phone_required": "Phone number is required.",
       "message_short": "Message must be at least 10 characters.",
       "message_required": "Message is required."

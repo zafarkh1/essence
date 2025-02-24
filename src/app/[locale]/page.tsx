@@ -1,9 +1,11 @@
-import Showcase from "@/components/pages/Home/Showcase";
+import Breakthrough from "@/components/pages/Home/Breakthrough";
+import Info from "@/components/pages/Home/Info";
 
 export default function Home() {
   return (
     <div className="myContainer">
-      <Showcase />
+      <Breakthrough />
+      <Info />
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import { Location, Mail, Phone } from "@/components/icons/ContactIcons";
 import { useTranslations } from "next-intl";
+import { Location, Mail, Phone } from "@/components/icons/ContactIcons";
 
 const Contact = () => {
   const t = useTranslations("Contact");

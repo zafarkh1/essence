@@ -14,8 +14,8 @@ const Header = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className="myContainer 2xl:pt-12 lg:pt-8 pt-2 flex lg:flex-col flex-row justify-between">
-      <Link href="/" className="lg:self-center 2xl:mb-8 lg:mb-6">
+    <div className="myContainer 2xl:pt-10 lg:pt-8 pt-2 flex lg:flex-col flex-row justify-between">
+      <Link href="/" className="lg:self-center 2xl:mb-6 lg:mb-4">
         <Logo />
       </Link>
       <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden">

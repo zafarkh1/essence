@@ -13,10 +13,8 @@ const Card = ({
 }) => {
   return (
     <div
-      className={`relative group overflow-hidden rounded-lg cursor-pointer w-full ${
-        isLarge
-          ? "xl:w-[537px] lg:h-[351px] h-[377px]"
-          : "lg:w-full lg:h-[226px] h-[326px]"
+      className={`relative group overflow-hidden rounded-lg cursor-pointer h-full lg:w-auto w-full ${
+        isLarge ? "aspect-[537/351]" : "aspect-[423/226]"
       }`}
     >
       {image ? (
@@ -33,9 +31,9 @@ const Card = ({
         </div>
       )}
 
-      <div className="absolute inset-0 bg-[#F05737] xl:opacity-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300 px-4 pb-9 flex flex-col justify-end text-white">
-        <h3 className="text-xl font-bold font-s">{title}</h3>
-        <p className="text-sm mt-2">{description}</p>
+      <div className="absolute inset-0 bg-primary xl:opacity-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300 px-4 pb-9 flex flex-col justify-end text-white">
+        <h3 className="text-xl font-semibold">{title}</h3>
+        <p className="text-sm mt-2 line-clamp-4">{description}</p>
       </div>
     </div>
   );

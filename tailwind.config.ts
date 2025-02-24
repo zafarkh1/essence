@@ -12,8 +12,8 @@ export default {
         gilroy: ["Gilroy", "sans-serif"],
       },
       colors: {
-        primary: "#FA3402",
-        primaryHover: "#EF544B",
+        primary: "#F53E7E",
+        primaryHover: "#D32E66",
         grayish: "#797979",
       },
       container: {

@@ -10,7 +10,7 @@ const Footer = () => {
   const t = useTranslations("Navbar");
 
   const links = [
-    { id: 1, url: `/${currentLang}/who`, title: t("who") },
+    { id: 1, url: `/${currentLang}`, title: t("who") },
     { id: 2, url: `/${currentLang}/what`, title: t("what") },
     { id: 3, url: `/${currentLang}/works`, title: t("works") },
     { id: 4, url: `/${currentLang}/people`, title: t("people") },
@@ -44,11 +44,15 @@ const Footer = () => {
         {/* Contact & Email Section (Updated) */}
         <div className="lg:grid grid-rows-3">
           <div className="row-start-2 row-span-1">
-            <span className="text-[10px] uppercase opacity-60">Contact us</span>
+            <span className="text-[10px] uppercase opacity-60">
+              {t("Footer.contactUs")}
+            </span>
             <p className="text-xl mt-2">+1 999 888-76-54</p>
           </div>
           <div className="row-start-3 row-span-1 self-end">
-            <span className="text-[10px] uppercase opacity-60">Email</span>
+            <span className="text-[10px] uppercase opacity-60">
+              {t("Footer.email")}
+            </span>
             <p className="text-sm mt-2">hello@logoipsum.com</p>
           </div>
         </div>
@@ -56,7 +60,9 @@ const Footer = () => {
         {/* Address Section (Updated) */}
         <div className="lg:grid grid-rows-3">
           <div className="row-start-2 row-span-1">
-            <span className="text-[10px] uppercase opacity-60">Address</span>
+            <span className="text-[10px] uppercase opacity-60">
+              {t("Footer.address")}
+            </span>
             <p className="text-sm mt-2">
               2118 Thornridge Cir. Syracuse, Connecticut 35624
             </p>

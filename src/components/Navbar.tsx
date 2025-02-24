@@ -10,7 +10,7 @@ const Navbar = ({ onLinkClick }: { onLinkClick?: () => void }) => {
   const links = [
     {
       id: 1,
-      url: `/${currentLang}/who`,
+      url: `/${currentLang}`,
       title: t("who"),
     },
     {
@@ -41,9 +41,9 @@ const Navbar = ({ onLinkClick }: { onLinkClick?: () => void }) => {
         <Link
           key={link.id}
           href={link.url}
-          onClick={onLinkClick} // Close menu on link click
+          onClick={onLinkClick}
           className={`lg:text-2xl text-base ${
-            pathname === link.url ? "text-[#FC2F3C] font-semibold" : ""
+            pathname === link.url ? "text-primary font-semibold" : ""
           }`}
         >
           {link.title}

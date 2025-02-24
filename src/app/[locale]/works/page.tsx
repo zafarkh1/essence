@@ -1,30 +1,18 @@
 "use client";
 
-import { getWork } from "@/api/data";
+import { useLocale } from "next-intl";
+import { useFetchData } from "@/api/api";
 import { TypeWork } from "@/api/type";
 import Cards from "@/components/pages/Work/Card";
-import { useLocale } from "next-intl";
-import { useEffect, useState } from "react";
 
 const page = () => {
-  const currentLang = useLocale() as "ru" | "en";
-  const [data, setData] = useState<TypeWork[]>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await getWork(currentLang);
-        setData(response);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, [currentLang]);
+  const { data } = useFetchData<TypeWork[]>(
+    "api/work",
+    useLocale() as "ru" | "en"
+  );
 
   return (
-    <div className="myContainer lg:py-16 py-8 2xl:min-h-[680px] lg:min-h-[300px] min-h-[200px]">
+    <div className="myContainer lg:py-16 py-8 2xl:min-h-[680px] lg:min-h-[300px] min-h-[calc(100vh-200px)]">
       <h1 className="font-semibold lg:text-[56px] text-[32px] lg:leading-[72px] leading-[41px] text-center">
         Work
       </h1>

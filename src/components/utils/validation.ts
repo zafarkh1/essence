@@ -16,10 +16,12 @@ export const getContactValidationSchema = (t: TFunctionType) => {
     email: Yup.string()
       .email(t("errors.invalid_email"))
       .required(t("errors.email_required")),
-    phone: Yup.string()
-      .matches(/^\+998 \d{2} \d{3} \d{2} \d{2}$/, t("errors.invalid_phone"))
+    phone_number: Yup.string()
+      .matches(/^\+\d+$/, t("errors.invalid_phone"))
+      .min(10, t("errors.phone_too_short"))
+      .max(20, t("errors.phone_too_long"))
       .required(t("errors.phone_required")),
-    description: Yup.string()
+    message: Yup.string()
       .min(10, t("errors.message_short"))
       .required(t("errors.message_required")),
   });

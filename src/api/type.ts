@@ -3,6 +3,7 @@ export interface TypeHome {
   subtitle: string;
   title: string;
   url: string;
+  image: string;
 }
 
 export interface TypeWho {
@@ -24,4 +25,13 @@ export interface TypeWork {
   title: string;
   content: string;
   url: string;
+  image: string;
+}
+
+export interface TypePeople {
+  first_name: string;
+  last_name: string;
+  founder: string;
+  description: string;
+  image: string;
 }
