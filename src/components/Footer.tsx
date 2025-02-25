@@ -53,7 +53,16 @@ const Footer = () => {
             <span className="text-[10px] uppercase opacity-60">
               {t("Footer.email")}
             </span>
-            <p className="text-sm mt-2">hello@logoipsum.com</p>
+            <p className="text-sm mt-2">
+              <a
+                href="mailto:hello@logoipsum.com"
+                target="_blank"
+                rel="noreferrer noopenner"
+                className="hover:underline"
+              >
+                hello@logoipsum.com
+              </a>
+            </p>
           </div>
         </div>
 

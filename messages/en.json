@@ -12,14 +12,29 @@
       "address": "Address"
     }
   },
+  "Home": {
+    "title": "Breakthrough for brands in the new communications economy",
+    "subtitle": "This is what we do",
+    "text": "We discover the breakthroughs that brands need to win. The discoveries, experiences, invention, integration and impact that will make a difference to their business. We are built to keep pace with change, built on data and technology, built for people and algorithms, built around diverse capability, built to test and learn at scale and, crucially, built to evolve.",
+    "list_1": "Analytics and Insight",
+    "list_2": "Frictionless Commerce",
+    "list_3": "Integrated Media Solutions",
+    "list_4": "Creative futures",
+    "list_5": "Specialist B2B marketing"
+  },
+  "Headings": {
+    "people": "People",
+    "works": "Works",
+    "clients": "Clients"
+  },
   "Contact": {
-    "title": "Do you want to become part of our musical universe? We are open to new ideas, partnerships and interesting projects!",
+    "title": "Do you want to do something together?",
     "description": "We are open to new ideas, partnerships, and exciting projects!",
     "email_info": "Write to us at",
     "email": "Email",
     "address": "Address: Tashkent, Amir Temur Avenue, 53.",
-    "phone": "Phone: +998 (71) 215-57-22",
-    "socials": "Socials: ",
+    "phone": "+1 234 678 9108 99",
+    "socials": "Contact@moralizer.com",
     "first_name": "First Name",
     "last_name": "Last Name",
     "phone_number": "Phone Number",
@@ -43,6 +58,7 @@
       "phone_too_long": "Phone number cannot exceed 20 characters.",
       "phone_required": "Phone number is required.",
       "message_short": "Message must be at least 10 characters.",
+      "message_long": "Message cannot exceed 1000 characters.",
       "message_required": "Message is required."
     }
   }

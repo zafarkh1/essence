@@ -23,6 +23,7 @@ export const getContactValidationSchema = (t: TFunctionType) => {
       .required(t("errors.phone_required")),
     message: Yup.string()
       .min(10, t("errors.message_short"))
+      .max(1000, t("errors.message_long"))
       .required(t("errors.message_required")),
   });
 };

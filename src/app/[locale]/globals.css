@@ -47,6 +47,34 @@
   @apply container mx-auto;
 }
 
+.navContainer {
+  @apply w-full max-w-[1050px] px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
+.infoContainer {
+  @apply w-full max-w-[1250px] px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
+.breakthroughContainer {
+  @apply w-full max-w-[1350px] px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
+.whatContainer {
+  @apply w-full max-w-[1150px] px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
+.workContainer {
+  @apply w-full max-w-[1500px] px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
+.peopleContainer {
+  @apply w-full max-w-[1250px] px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
+.contactContainer {
+  @apply w-full max-w-[1150px] px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
 .transition3 {
   transition: all 0.3s ease-in-out;
 }

@@ -1,12 +1,13 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { useFetchData } from "@/api/api";
 import { TypeClients } from "@/api/type";
 
 const Clients = () => {
+  const t = useTranslations("Headings");
   const { data } = useFetchData<TypeClients[]>(
     "api/partners",
     useLocale() as "ru" | "en"
@@ -15,7 +16,7 @@ const Clients = () => {
   return (
     <div className="overflow-hidden lg:mb-16 mb-8">
       <h2 className="lg:text-[40px] text-3xl font-semibold lg:leading-[52px] leading-[40px] text-center lg:mb-8 pb-4">
-        Clients
+        {t("clients")}
       </h2>
       <div className="overflow-hidden w-full">
         <Marquee direction="right" gradient={false} className="overflow-hidden">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { MenuBar } from "./icons/icons";
 import Navbar from "./Navbar";
@@ -13,8 +13,20 @@ const Header = () => {
 
   const closeMenu = () => setIsOpen(false);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
-    <div className="myContainer 2xl:pt-10 lg:pt-8 pt-2 flex lg:flex-col flex-row justify-between">
+    <div className="navContainer 2xl:pt-10 lg:pt-8 pt-2 flex lg:flex-col flex-row justify-between">
       <Link href="/" className="lg:self-center 2xl:mb-6 lg:mb-4">
         <Logo />
       </Link>

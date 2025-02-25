@@ -14,7 +14,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="myContainer">
+      <div className="whatContainer min-h-screen">
         {/* Cards */}
         {data && (
           <div className="flex flex-col lg:flex-row justify-center gap-8 py-16">

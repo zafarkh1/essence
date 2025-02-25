@@ -28,13 +28,13 @@ export const LanguageSwitcher = () => {
           <ArrowDown />
         </Menu.Button>
 
-        <Menu.Items className="absolute top-full mt-2 border border-gray-200 rounded-lg bg-white shadow-md lg:text-base">
+        <Menu.Items className="absolute z-10 top-full mt-2 border border-gray-200 rounded-lg bg-white shadow-md lg:text-base">
           <Menu.Item>
             {({ active }) => (
               <button
                 onClick={() => handleLanguageChange("en")}
                 className={`block px-3 py-2 w-full text-left ${
-                  currentLang === "en" ? "text-[#FC2F3C] font-semibold" : ""
+                  currentLang === "en" ? "text-primary font-semibold" : ""
                 } ${active ? "bg-[#F5F5F5]" : ""}`}
               >
                 English
@@ -46,7 +46,7 @@ export const LanguageSwitcher = () => {
               <button
                 onClick={() => handleLanguageChange("ru")}
                 className={`block px-3 py-2 w-full text-left ${
-                  currentLang === "ru" ? "text-[#FC2F3C] font-semibold" : ""
+                  currentLang === "ru" ? "text-primary font-semibold" : ""
                 } ${active ? "bg-[#F5F5F5]" : ""}`}
               >
                 Русский
@@ -62,7 +62,7 @@ export const LanguageSwitcher = () => {
         <div className="flex justify-between items-center w-full">
           <button
             onClick={() => handleLanguageChange("en")}
-            className={currentLang === "en" ? "font-bold text-[#FC2F3C]" : ""}
+            className={currentLang === "en" ? "font-bold text-primary" : ""}
           >
             English
           </button>
@@ -72,7 +72,7 @@ export const LanguageSwitcher = () => {
         <div className="flex justify-between items-center w-full">
           <button
             onClick={() => handleLanguageChange("ru")}
-            className={currentLang === "ru" ? "font-bold text-[#FC2F3C]" : ""}
+            className={currentLang === "ru" ? "font-bold text-primary" : ""}
           >
             Русский
           </button>

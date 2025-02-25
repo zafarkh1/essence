@@ -33,7 +33,13 @@ const Card = ({
 
       <div className="absolute inset-0 bg-primary xl:opacity-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300 px-4 pb-9 flex flex-col justify-end text-white">
         <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-sm mt-2 line-clamp-4">{description}</p>
+        <p
+          className={`text-sm mt-2 ${
+            isLarge ? "lg:line-clamp-none line-clamp-6" : "line-clamp-4"
+          }`}
+        >
+          {description}
+        </p>
       </div>
     </div>
   );
